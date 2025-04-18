@@ -12,7 +12,7 @@
 .article__big-card-container {
   flex: 2;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .article__small-card-container {
