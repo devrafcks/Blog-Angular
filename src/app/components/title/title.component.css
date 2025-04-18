@@ -1,0 +1,19 @@
+.menu__title-container {
+    color:rgb(246, 238, 244);
+}
+
+.menu__title-h1 {
+    margin: 15px 2px;
+    font-size: 5.5rem;
+    letter-spacing: 0.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu__title-hr{
+    width: 100%;
+    height: 0.2rem;
+    background-color:rgb(255, 235, 250);
+    margin: 10px auto;
+}

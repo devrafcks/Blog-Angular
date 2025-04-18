@@ -1,0 +1,84 @@
+.smallCard__container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(26, 0, 51, 0.13);
+  transition: transform 0.3s ease;
+  height: 200px;
+  width: 500px;
+}
+
+.smallCard__container:hover {
+  transform: translateY(-5px);
+}
+
+.smallCard__image-container {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.smallCard__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.smallCard__text-container {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.smallCard__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.smallCard__text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #cfcfcf;
+  margin-bottom: 16px;
+}
+
+.smallCard__button {
+  align-self: start;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #ff00bb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.smallCard__button:hover {
+  background-color: #8800cc;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .smallCard__container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .smallCard__image-container,
+  .smallCard__text-container {
+    width: 100%;
+    height: auto;
+  }
+}
